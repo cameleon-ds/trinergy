@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRINERGY - Contact</title>
+<meta name="description" content="Contactez Trinergy pour réserver votre séance de sophrologie, mobilité et méditation, en individuel ou en entreprise.">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Trinergy - Coeur . Corps . Conscience"></a>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="#contact-form" class="btn btn-dark mobile-cta">Réserver</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contact-form" class="btn btn-dark">Réserver</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="contact-wrap">
+  <div class="contact-form-side" id="contact-form">
+    <span class="eyebrow">Nous contacter</span>
+    <h1 style="font-size:clamp(2rem,4vw,3rem);">Commencez votre transformation</h1>
+    <p>Rejoignez-nous dans cette aventure vers un bien-être durable et une vie plus équilibrée.</p>
+
+    <form class="contact-form" action="mailto:contact.trinergy@gmail.com" method="post" enctype="text/plain">
+      <div class="row">
+        <div>
+          <label for="prenom">Prénom <span class="req">(obligatoire)</span></label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+        <div>
+          <label for="nom">Nom de famille <span class="req">(obligatoire)</span></label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+      </div>
+      <label for="email">E-mail <span class="req">(obligatoire)</span></label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message <span class="req">(obligatoire)</span></label>
+      <textarea id="message" name="message" required></textarea>
+
+      <label for="tel">Numéro de téléphone</label>
+      <input type="tel" id="tel" name="tel">
+
+      <button type="submit" class="btn btn-dark">Envoyer</button>
+    </form>
+  </div>
+  <div class="contact-image-side" style="background-image:url('images/hero-contact.jpg');"></div>
+</section>
+
+<section class="section bg-alt">
+  <div class="container">
+    <h2 class="text-center">FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>Combien de temps dure une séance ?</summary>
+        <p>Chaque séance dure 1h15, divisée en trois parties de 25 minutes : souplesse, respiration et méditation.</p>
+      </details>
+      <details>
+        <summary>Faut-il une tenue particulière ?</summary>
+        <p>Une tenue confortable et souple suffit. Nous recommandons des vêtements dans lesquels vous pouvez bouger librement.</p>
+      </details>
+      <details>
+        <summary>Les séances sont-elles adaptées aux débutants ?</summary>
+        <p>Absolument ! Nos séances sont adaptées à tous les niveaux, des débutants complets aux pratiquants expérimentés.</p>
+      </details>
+      <details>
+        <summary>Puis-je annuler ou reporter une séance ?</summary>
+        <p>Oui, vous pouvez annuler ou reporter une séance jusqu'à 24h avant. Nous nous adaptons à vos contraintes.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="contact-info">
+  <div class="container">
+    <h3>Au plaisir de vous faire du bien</h3>
+    <p><a href="mailto:contact.trinergy@gmail.com">contact.trinergy@gmail.com</a></p>
+    <p>Tel &amp; Whatsapp : <a href="https://wa.me/21694376368">+216 94 376 368</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Trinergy"></a>
+    <small>©TRINERGY - Tout droits reservés - 2025</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
