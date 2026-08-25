@@ -95,12 +95,12 @@ p{ margin: 0 0 1em; }
   background: var(--accent-dark);
   color: var(--white);
 }
-.btn-dark:hover{ background:#373d33; transform: translateY(-2px); }
+.btn-dark:hover, a.btn-dark:hover{ background:#373d33; transform: translateY(-2px); }
 .btn-light{
   background: #ececec;
   color: #2d2d2d;
 }
-.btn-light:hover{ background:#e0e0e0; transform: translateY(-2px); }
+.btn-light:hover, a.btn-light:hover{ background:#e0e0e0; transform: translateY(-2px); }
 
 /* Header
    ========================================================================== */
@@ -197,16 +197,17 @@ nav.main-nav a:hover{
   max-width: 820px;
   padding: 0 6vw;
 }
-.hero-content .eyebrow{ color:#fff; opacity:.9; font-size:1.2rem; }
+.hero-content .eyebrow{ color:#fff; font-size:1.2rem; }
 .hero-content h1{
   color:#fff;
   letter-spacing: .12em;
   margin-bottom: .3em;
 }
 .hero-content .sub{
-  font-size: 1.15rem;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
-  opacity:.95;
 }
 .hero.hero-small{ min-height: 420px; }
 
@@ -353,7 +354,7 @@ nav.main-nav a:hover{
 .split-photo-bg img{ width:50%; height:100%; object-fit:cover; display:block; }
 .cta-band .container{ position:relative; z-index:2; }
 .cta-band h2{ color:#fff; }
-.cta-band p{ font-size: 1.1rem; opacity:.95; }
+.cta-band p{ font-size: 1.1rem; }
 
 /* Stats (services page)
    ========================================================================== */
@@ -563,6 +564,9 @@ footer.site-footer small{ color: var(--text-light); }
   .timeline{ grid-template-columns: 1fr; }
   .values-grid{ grid-template-columns: 1fr 1fr; }
   .dual-cards{ grid-template-columns: 1fr; }
+  .dual-card .photo-cluster.cluster-particuliers img.p2{ left: 2%; }
+  .dual-card .photo-cluster.cluster-entreprises img.p2{ right: 2%; }
+  .hero-content .sub{ font-size: 1.4rem; }
   .service-cards{ grid-template-columns: 1fr; }
   .rect-cluster{ padding-top: 90px; }
   .rect-cluster .small{ width: 62%; }
@@ -618,4 +622,24 @@ footer.site-footer small{ color: var(--text-light); }
 @media (max-width: 560px){
   .values-grid{ grid-template-columns: 1fr; }
   .section{ padding: 60px 0; }
+}
+
+/* Scroll reveal animation
+   ========================================================================== */
+.reveal{
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 1.3s cubic-bezier(.2,.65,.3,1), transform 1.3s cubic-bezier(.2,.65,.3,1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce){
+  .reveal{
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
