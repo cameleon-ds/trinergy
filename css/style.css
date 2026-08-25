@@ -127,7 +127,7 @@ p{ margin: 0 0 1em; }
   padding-bottom: 14px;
 }
 .logo{ position:relative; z-index:101; }
-.logo img{ height: 54px; width:auto; }
+.logo img{ height: 46px; width:auto; }
 
 nav.main-nav{
   display:flex;
