@@ -190,7 +190,7 @@ nav.main-nav a:hover{
 .hero::after{
   content:"";
   position:absolute; inset:0;
-  background: linear-gradient(180deg, rgba(20,24,16,.32), rgba(20,24,16,.45));
+  background: linear-gradient(180deg, rgba(20,24,16,.2), rgba(20,24,16,.3));
 }
 .hero-content{
   position:relative;
