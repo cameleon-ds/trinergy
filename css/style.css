@@ -108,7 +108,6 @@ p{ margin: 0 0 1em; }
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid var(--border);
 }
 .site-header::before{
   content:"";
@@ -116,6 +115,7 @@ p{ margin: 0 0 1em; }
   inset:0;
   background: rgba(255,255,255,.92);
   backdrop-filter: blur(6px);
+  box-shadow: 0 12px 48px 12px rgba(71,81,63,.15);
   z-index:-1;
 }
 .site-header .container{
